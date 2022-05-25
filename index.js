@@ -16,7 +16,7 @@ if (operator === '*') {
 } else if (operator === '-') {
     alert(message + (number_1 - number_2));
 } else {
-    alert('Incorect input');
+    alert('No such operation exists.');
 }
 
 
