@@ -1,22 +1,22 @@
-const number_1 = Number (prompt ('Enter any number'));
+const number1 = Number (prompt ('Enter any number'));
 const operator = prompt ('Enter one of the suggested operator (*/+-)');
-const number_2 =  Number (prompt ('Enter any number again'));
-const message = 'Your resultat = ';
+const number2 =  Number (prompt ('Enter any number again'));
+const message = 'Your result = ';
 
-if (isNaN(number_1) || isNaN(number_2)) {
+if (isNaN(number1) || isNaN(number2)) {
     alert('Incorect input');
-}
-
-if (operator === '*') {
-    alert (message + (number_1 * number_2));
-} else if (operator === '/') {
-    alert(message + (number_1 / number_2));
-} else if (operator === '+') {
-    alert(message + (number_1 + number_2));
-} else if (operator === '-') {
-    alert(message + (number_1 - number_2));
 } else {
-    alert('No such operation exists.');
+    if (operator === '*') {
+        alert (message + (number1 * number2));
+    } else if (operator === '/') {
+        alert(message + (number1 / number2));
+    } else if (operator === '+') {
+        alert(message + (number1 + number2));
+    } else if (operator === '-') {
+        alert(message + (number1 - number2));
+    } else {
+        alert('No such operation exists.');
+    }
 }
 
 
